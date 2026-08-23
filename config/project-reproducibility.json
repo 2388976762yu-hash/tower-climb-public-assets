@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "mode": "exempt",
+  "runtime": {"primary": "static_assets", "versions": {}, "dependency_lock": null},
+  "docker": {"dockerfile": null, "compose": null, "test_compose": null, "healthcheck_entrypoint": null},
+  "persistent_data": {"has_persistent_data": false, "volumes": [], "database": {"engine": null, "version": null, "runtime_volume": null, "snapshot_or_manifest": null}},
+  "backup_restore": {"backup_entrypoint": null, "restore_entrypoint": null, "verify_entrypoint": null, "bootstrap_entrypoint": null, "latest_snapshot_manifest": null},
+  "configuration": {"env_example": null, "secrets_in_git": false},
+  "cloud_execution": {"cursor_cloud": "static_asset_audit_only", "codex_cloud": "static_asset_audit_only", "github_actions": "not_required", "local_only_reasons": []},
+  "ci": {"workflow": null, "reproducibility_check": null},
+  "exception_reason_if_any": "Static public asset distribution repository with no runtime; an Nginx image would add maintenance without improving recoverability.",
+  "migration_debt_if_legacy": null
+}
